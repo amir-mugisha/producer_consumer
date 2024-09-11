@@ -16,7 +16,7 @@ public class PerformanceComparison {
                 Thread.currentThread().interrupt();
             }
         });
-        System.out.println("BlockingQueueExample duration: " + durationBlockingQueue + " ns");
+        System.out.println("BlockingQueueExample duration: " + durationBlockingQueue + " sec");
 
         // Measure performance of ProducerConsumer
         ProducerConsumer producerConsumer = new ProducerConsumer();
@@ -44,6 +44,6 @@ public class PerformanceComparison {
                 Thread.currentThread().interrupt();
             }
         });
-        System.out.println("ProducerConsumer duration: " + durationProducerConsumer + " ns");
+        System.out.println("ProducerConsumer duration: " + durationProducerConsumer + " sec");
     }
 }

@@ -3,6 +3,6 @@ public class PerformanceUtil {
         long startTime = System.nanoTime();
         task.run();
         long endTime = System.nanoTime();
-        return endTime - startTime;
+        return (endTime - startTime)/ 1_000_000_000;
     }
 }
